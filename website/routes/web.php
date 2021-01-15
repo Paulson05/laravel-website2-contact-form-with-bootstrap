@@ -23,4 +23,5 @@ Route::get('/pages/home', [App\Http\Controllers\PagesController::class, 'home'])
 Route::get('/pages/about', [App\Http\Controllers\PagesController::class, 'about'])->name('about');
 Route::get('/pages/services', [App\Http\Controllers\PagesController::class, 'services'])->name('services');
 Route::get('/pages/gallery', [App\Http\Controllers\PagesController::class, 'gallery'])->name('gallery');
+Route::post('/pages/post', [App\Http\Controllers\PagesController::class, 'save'])->name('save');
 Route::get('/pages/contact', [App\Http\Controllers\PagesController::class, 'contact'])->name('contact');
